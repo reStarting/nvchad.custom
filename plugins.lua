@@ -172,7 +172,9 @@ local plugins = {
 		"hrsh7th/nvim-cmp",
 		opts = {
 			mapping = {
-				["<C-k>"] = cmp.mapping(function(fallback)
+				["<C-k>"] = cmp.mapping.select_prev_item(),
+				["<C-j>"] = cmp.mapping.select_next_item(),
+				["<C-a>"] = cmp.mapping(function(fallback)
 					vim.fn["copilot#Dismiss"]()
 					cmp.mapping.complete()(fallback)
 				end, {
