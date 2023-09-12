@@ -172,7 +172,14 @@ local plugins = {
 		"hrsh7th/nvim-cmp",
 		opts = {
 			mapping = {
-				["<C-k>"] = cmp.mapping.complete(),
+				["<C-k>"] = cmp.mapping(function(fallback)
+					vim.fn["copilot#Dismiss"]()
+					cmp.mapping.complete()(fallback)
+				end, {
+					"i",
+					"s",
+				}),
+				-- ["<C-k>"] = cmp.mapping.complete(),
 				["<Tab>"] = cmp.mapping(function(fallback)
 					local copilot_keys = vim.fn["copilot#Accept"]()
 					if copilot_keys ~= "" and type(copilot_keys) == "string" then
