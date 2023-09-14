@@ -24,7 +24,7 @@ M.general = {
 		-- map("i", "<A-k>", "<Esc>:m .-2<cr>==gi", { desc = "Move up" })
 		["<leader><space>"] = { "<cmd> Telescope find_files <CR>", "Find files" },
 		["<leader>/"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
-		["<C-\\>"] = {
+		["<leader>wh"] = {
 			function()
 				require("nvterm.terminal").toggle("horizontal")
 			end,
@@ -58,7 +58,7 @@ M.general = {
 		[">"] = { ">gv", "indenting" },
 	},
 	t = {
-		["<C-\\>"] = {
+		["<leader>wh"] = {
 			function()
 				require("nvterm.terminal").toggle("horizontal")
 			end,
