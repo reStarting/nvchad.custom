@@ -19,7 +19,6 @@ local sources = {
 
 	-- cpp
 	formatting.clang_format,
-	lint.shellcheck,
 }
 
 null_ls.setup({
