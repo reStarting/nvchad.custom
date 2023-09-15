@@ -2,13 +2,12 @@
 local M = {}
 
 M.disabled = {
-  n = {
+	n = {
 		["<C-h>"] = "",
 		["<C-l>"] = "",
 		["<C-j>"] = "",
 		["<C-k>"] = "",
-
-  }
+	},
 }
 
 M.general = {
@@ -77,6 +76,7 @@ M.lspconfig = {
 			"<cmd>Lspsaga peek_definition<cr>",
 			"Peek Definition",
 		},
+		["gD"] = { "<cmd>Lspsaga goto_definition<CR>", "Goto Declaration" },
 		["gh"] = { "<cmd>Lspsaga finder<CR>", "References" },
 		["K"] = { "<cmd>Lspsaga hover_doc<CR>", "Hover" },
 		["go"] = { "<cmd>Lspsaga outline<CR>", "Outline" },
