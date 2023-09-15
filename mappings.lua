@@ -46,6 +46,8 @@ M.general = {
 		},
 		-- map("n", "<leader>wd", "<C-W>c", { desc = "Delete window" })
 		["<leader>wd"] = { "<C-W>c", "Delete window" },
+		["g["] = { "<C-o>", "Jump back" },
+		["g]"] = { "<C-i>", "Jump forward" },
 	},
 	v = {
 		["<"] = { "<gv", "indenting" },
