@@ -15,6 +15,9 @@ M.ui = {
 		--   modules[5] = function() return require("noice").api.status.command.get() end
 		-- end,
 	},
+	tabufline = {
+		lazyload = false,
+	},
 }
 
 M.plugins = "custom.plugins"
