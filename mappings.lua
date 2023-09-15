@@ -21,14 +21,9 @@ M.general = {
 		-- map("n", "<A-k>", ":m .-2<cr>==", { desc = "Move up" })
 		-- map("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
 		-- map("i", "<A-k>", "<Esc>:m .-2<cr>==gi", { desc = "Move up" })
-		["<leader><space>"] = { "<cmd> Telescope find_files <CR>", "Find files" },
-		["<leader>/"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
-		["<leader>wh"] = {
-			function()
-				require("nvterm.terminal").toggle("horizontal")
-			end,
-			"Toggle horizontal term",
-		},
+		-- ["<leader><space>"] = { "<cmd> Telescope find_files <CR>", "Find files" },
+		-- ["<leader>/"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
+
 		-- map("n", "gw", "*N")
 		-- map("x", "gw", "*N")
 		["gw"] = { "*N", "Find words" },
@@ -56,14 +51,7 @@ M.general = {
 		["<"] = { "<gv", "indenting" },
 		[">"] = { ">gv", "indenting" },
 	},
-	t = {
-		["<leader>wh"] = {
-			function()
-				require("nvterm.terminal").toggle("horizontal")
-			end,
-			"Toggle horizontal term",
-		},
-	},
+	t = {},
 }
 
 -- more keybinds!
