@@ -123,6 +123,9 @@ local plugins = {
 					pcall(vim.keymap.del, "n", "[[", { buffer = buffer })
 				end,
 			})
+			vim.api.nvim_set_hl(0, "IlluminatedWordText", { link = "Visual" })
+			vim.api.nvim_set_hl(0, "IlluminatedWordRead", { link = "Visual" })
+			vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { link = "Visual" })
 		end,
     -- stylua: ignore
     keys = {
