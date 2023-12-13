@@ -211,6 +211,14 @@ local plugins = {
 		"christoomey/vim-tmux-navigator",
 		keys = { "<C-h>", "<C-l>", "<C-j>", "<C-k>" },
 	},
+	{
+		"kyechui/nvim-surround",
+		version = "*",
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({})
+		end,
+	},
 	-- {
 	--   "dstein64/vim-startuptime",
 	--   cmd = "StartupTime",
@@ -219,7 +227,7 @@ local plugins = {
 	--   end,
 	-- },
 	-- {
-	--   "folke/noice.nvim",
+	--   "foke/noice.nvim",
 	-- },
 
 	-- All NvChad plugins are lazy-loaded by default
