@@ -6,5 +6,4 @@ function M.float_term(cmd, opts)
   require("lazy.util").float_term(cmd, opts)
 end
 
-
 return M
