@@ -11,6 +11,9 @@ M.ui = {
     Comment = {
       italic = true,
     },
+    CursorLineNr = {
+      fg = "yellow",
+    },
   },
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
