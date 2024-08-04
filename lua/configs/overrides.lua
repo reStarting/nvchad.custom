@@ -67,6 +67,9 @@ M.nvimtree = {
       },
     },
   },
+  filters = {
+    dotfiles = false,
+  },
   -- view = {
   --   -- side = "right",
   --   width = 35,
