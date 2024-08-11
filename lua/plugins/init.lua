@@ -231,6 +231,20 @@ return {
       require("nvim-surround").setup {}
     end,
   },
+  {
+    "windwp/nvim-ts-autotag",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-ts-autotag").setup {}
+    end,
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    event = "BufReadPost",
+    config = function()
+      require("treesitter-context").setup {}
+    end,
+  },
   -- {
   --   "dstein64/vim-startuptime",
   --   cmd = "StartupTime",
