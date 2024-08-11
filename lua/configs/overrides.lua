@@ -69,6 +69,7 @@ M.nvimtree = {
   },
   filters = {
     dotfiles = false,
+    custom = { ".git$" },
   },
   -- view = {
   --   -- side = "right",
