@@ -20,8 +20,8 @@ map("n", "<leader>-", "<C-W>s", { desc = "Split window below" })
 map("n", "<leader>|", "<C-W>v", { desc = "Split window right" })
 
 map("n", "<leader>wd", "<C-W>c", { desc = "Delete window" })
-map("n", "g[", "<C-o>", { desc = "Jump back" })
-map("n", "g]", "<C-i>", { desc = "Jump forward" })
+map("n", "[", "<C-o>", { desc = "Jump back" })
+map("n", "]", "<C-i>", { desc = "Jump forward" })
 
 map("n", "<leader>gg", function()
   require("utils.term").float_term { "lazygit" }
