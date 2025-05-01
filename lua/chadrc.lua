@@ -6,7 +6,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "onedark",
+  theme = "tundra",
+  -- transparency = true,
 
   hl_override = {
     Comment = { italic = true },
@@ -23,13 +24,18 @@ M.ui = {
     lazyload = false,
   },
   statusline = {
+    theme = "vscode_colored",
     -- overriden_modules = function(modules)
     --   modules[5] = function() return require("noice").api.status.command.get() end
     -- end,
   },
-  hl_add = {
-    NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  cmp = {
+    -- style = "atom_colored",
+    icons_left = true,
   },
+  -- hl_add = {
+  --   NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  -- },
 }
 
 return M
