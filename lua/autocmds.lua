@@ -31,10 +31,12 @@ autocmd("BufReadPost", {
   end,
 })
 autocmd("BufWritePre", {
-  callback = function()
-    vim.lsp.buf.format()
+  pattern = "*",
+  callback = function(args)
+    require("conform").format { bufnr = args.buf }
   end,
 })
+
 autocmd("FileType", {
   pattern = {
     "qf",
