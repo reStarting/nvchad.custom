@@ -24,7 +24,8 @@ M.ui = {
     lazyload = false,
   },
   statusline = {
-    theme = "vscode_colored",
+    theme = "minimal",
+    separator_style = "round",
     -- overriden_modules = function(modules)
     --   modules[5] = function() return require("noice").api.status.command.get() end
     -- end,
