@@ -142,10 +142,10 @@ return {
       { "k", "<Plug>(accelerated_jk_gk)", desc = "accelerate k" },
     },
   },
-  {
-    "github/copilot.vim",
-    event = "InsertEnter",
-  },
+  -- {
+  --   "github/copilot.vim",
+  --   event = "InsertEnter",
+  -- },
   {
     "glepnir/lspsaga.nvim",
     event = "BufReadPost",
