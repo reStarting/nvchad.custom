@@ -177,11 +177,11 @@ return {
         }),
         -- ["<C-k>"] = cmp.mapping.complete(),
         ["<Tab>"] = cmp.mapping(function(fallback)
-          local copilot_keys = vim.fn["copilot#Accept"]()
-          if copilot_keys ~= "" and type(copilot_keys) == "string" then
-            vim.api.nvim_feedkeys(copilot_keys, "i", true)
-            cmp.mapping.abort()
-          elseif cmp.visible() then
+          -- local copilot_keys = vim.fn["copilot#Accept"]()
+          -- if copilot_keys ~= "" and type(copilot_keys) == "string" then
+          --   vim.api.nvim_feedkeys(copilot_keys, "i", true)
+          --   cmp.mapping.abort()
+          if cmp.visible() then
             cmp.select_next_item()
           elseif require("luasnip").expand_or_jumpable() then
             vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>luasnip-expand-or-jump", true, true, true), "")
